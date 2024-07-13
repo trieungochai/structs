@@ -26,7 +26,8 @@ func main() {
 		},
 	}
 
-	haitn.updateFirstName("趙")
+	haitnPointer := &haitn
+	haitnPointer.updateFirstName("趙")
 	haitn.print()
 }
 
@@ -34,6 +35,6 @@ func (p person) print() {
 	fmt.Printf("%+v", p)
 }
 
-func (p person) updateFirstName(newFirstName string) {
-	p.firstName = newFirstName
+func (pointerToPerson *person) updateFirstName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName
 }
