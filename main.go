@@ -26,8 +26,7 @@ func main() {
 		},
 	}
 
-	haitnPointer := &haitn
-	haitnPointer.updateFirstName("趙")
+	haitn.updateFirstName("趙")
 	haitn.print()
 }
 
