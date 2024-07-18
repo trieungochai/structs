@@ -1,6 +1,3 @@
-### structs
-![alt text](<Screenshot 2024-07-14 at 23.17.08.png>)
-
 --------------
 ### `&variable` and `*pointer`
 
